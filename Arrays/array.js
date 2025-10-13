@@ -1,15 +1,92 @@
 
+// --------------------------------------------------------------------------
+// *** Array Declaration ***
+
+// Method 1
+// const elements = [
+//     "Saab", 
+//     1, 
+//     true, 
+//     null, 
+//     [1, 2, 3]
+// ];
+
+// elements[5] = { name: "John" };
+// elements[6] = Date().toLocaleString();
+// elements[7] = function() { return "Hello"; };
+
+// console.log(elements[6]);
+// console.log(elements[7]());
+
+// Method 2
+// const cars = new Array(
+//     "Saab",
+//      1, 
+//     true, 
+//     null, 
+//     [1, 2, 3]
+// );
+
+// cars[5] = { name: "Doe" };
+
+// console.log(cars);
+
+
+// --------------------------------------------------------------------------
+// *** Array with loop ***
+
 // const cars = ["Saab", "Volvo", "BMW", "Mercedes", "Audi"];
 
-/*
-console.log(cars);
+// for (let i = 0; i < cars.length; i++) {
+//     console.log(cars[i]);
+// }
 
-console.log(cars.length);
+// cars.forEach(car => console.log(car));
 
-cars.length = 2;
+// for (const car of cars) {
+//     console.log(car);
+// }
 
-console.log(cars);
-*/
+
+// --------------------------------------------------------------------------
+// *** Accessing and Changing Array Elements ***
+
+// let cars = ["Saab", "Volvo", "BMW", "Mercedes", "Audi"];
+// console.log(cars[0]);
+// console.log(cars[3]);
+
+// cars[0] = "Opel";
+// console.log(cars);
+
+
+// ---------------------------------------------------------------------------
+// *** typeof operator with array ***
+
+// let cars = ["Saab", "Volvo", "BMW", "Mercedes", "Audi"];
+// console.log(typeof cars === "object");
+// Output: object
+
+
+// --------------------------------------------------------------------------
+// *** Array isArray() method ***
+
+// let cars = ["Saab", "Volvo", "BMW", "Mercedes", "Audi"];
+// console.log(Array.isArray(cars));
+// console.log(cars instanceof Array);
+// Output: true
+
+
+// --------------------------------------------------------------------------
+// *** Array Length Property ***
+
+// let cars = ["Saab", "Volvo", "BMW", "Mercedes", "Audi"];
+
+// console.log(cars.length);
+
+// cars.length = 2;
+
+// console.log(cars);
+
 
 // cars[10] = "Toyota";
 
