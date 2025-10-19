@@ -3,53 +3,53 @@
 // *** Creating An Object ***
 
 // Style 1: Object literal - recommended way
-const building = {
-    buildingNumber: 42,
-    street: "Main St",
-    city: "Metropolis",
-    country: "Fictionland",
-    floors: 9,
+// const building = {
+//     buildingNumber: 42,
+//     street: "Main St",
+//     city: "Metropolis",
+//     country: "Fictionland",
+//     floors: 9,
 
-    // Nested Object
-    cars: {
-        car1: "Toyota",
-        car2: "Honda",
-        car3: "Ford"
-    },
+//     // Nested Object
+//     cars: {
+//         car1: "Toyota",
+//         car2: "Honda",
+//         car3: "Ford"
+//     },
 
-    // Array 
-    tenants: ["Alice", "Bob", "Charlie"],
+//     // Array 
+//     tenants: ["Alice", "Bob", "Charlie"],
 
-    getAddress: function() {
-        return `${this.buildingNumber} ${this.street}, ${this.city}, ${this.country}`;
-    }
-}
+//     getAddress: function() {
+//         return `${this.buildingNumber} ${this.street}, ${this.city}, ${this.country}`;
+//     }
+// }
 
-// MODIFYING PROPERTIES
-building.floors = 12;
-building["floors"] = 15;
+// // MODIFYING PROPERTIES
+// building.floors = 12;
+// building["floors"] = 15;
 
-let property = "city";
-building[property] = "Gotham";
+// let property = "city";
+// building[property] = "Gotham";
 
-// ADDING A NEW PROPERTY
-building.height = 200;
+// // ADDING A NEW PROPERTY
+// building.height = 200;
 
-// DELETING A PROPERTY
-delete building.country;
-delete building["height"];
+// // DELETING A PROPERTY
+// delete building.country;
+// delete building["height"];
 
-let address = building.getAddress();
-console.log(address);
+// let address = building.getAddress();
+// console.log(address);
 
-console.log(building.cars.car2);
-console.log(building.cars["car2"]);
-console.log(building["cars"].car2);
-console.log(building["cars"]["car2"]);
-let c1 = "cars", c2 = "car2";
-console.log(building[c1][c2]);
+// console.log(building.cars.car2);
+// console.log(building.cars["car2"]);
+// console.log(building["cars"].car2);
+// console.log(building["cars"]["car2"]);
+// let c1 = "cars", c2 = "car2";
+// console.log(building[c1][c2]);
 
-console.log(building);
+// console.log(building);
 
 // // Style 2: Using the Object constructor
 // const car_1 = new Object();
@@ -141,3 +141,28 @@ console.log(building);
 // anotherPerson.firstName = "Jane";
 
 // console.log(person.firstName);
+
+// --------------------------------------------------------------------------
+// *** Methods In Objects ***
+
+// const person = {
+//     firstName: "James",
+//     lastName: "Cameron",
+//     country: "Armenia",
+//     city: "Yerevan",
+
+//     fullName: function() {
+//         return `${this.firstName} ${this.lastName}`
+//     }
+// }
+
+// // console.log(person.fullName());
+
+// person.getAddress = function() {
+//     return `${this.country} ${this.city}`; 
+// }
+
+// let get_address = person.getAddress.bind(person);
+// // console.log(get_address());
+
+// console.log(Object.values(person));
