@@ -1,5 +1,4 @@
 
-// --------------------------------------------------------------------------
 // *** Creating An Object ***
 
 // Style 1: Object literal - recommended way
@@ -62,24 +61,6 @@
 //     model: "Civic",
 //     year: 2021
 // });
-
-// --------------------------------------------------------------------------
-// *** Object Constructor Function ***
-
-// function Person(first, last, age) {
-//   this.firstName = first;
-//   this.lastName = last;
-//   this.age = age;
-//   this.nationality = "English";
-// }
-
-// const karen = new Person("Karen", "Smith", 30);
-// console.log(karen.firstName);
-// console.log(karen.nationality);
-
-// const joe = new Person("Joe", "Doe", 25);
-// console.log(joe.age);
-
 
 // --------------------------------------------------------------------------
 // *** Object.create() Function ***
