@@ -31,12 +31,4 @@ console.log(karen.firstName);
 // const joe = new Person("Joe", "Doe", 25);
 // console.log(joe.age);
 
-// --------------------------------------------------------------------------
-// *** Adding a property to a constructor ***
-
-Person.prototype.country = "US";
-
-Person.prototype.setLastNamne = function (lastName) {
-    this.lastName = lastName;
-}
 
